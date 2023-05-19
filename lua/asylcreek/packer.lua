@@ -62,4 +62,6 @@ return require('packer').startup(function(use)
     use("tpope/vim-commentary")
 
     use("jiangmiao/auto-pairs")
+
+    use("APZelos/blamer.nvim")
 end)
