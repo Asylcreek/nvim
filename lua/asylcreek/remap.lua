@@ -39,7 +39,7 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 
 vim.keymap.set("n", "<leader>n", function ()
-    vim.cmd("NeoTreeFocus")
+    vim.cmd("Neotree focus")
 end)
 vim.keymap.set("n", "<C-b>", function ()
     vim.cmd("NeoTreeShowToggle")

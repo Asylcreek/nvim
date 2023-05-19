@@ -104,11 +104,6 @@ _G.packer_plugins = {
     path = "/Users/asylcreek/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
     url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
   },
-  nerdtree = {
-    loaded = true,
-    path = "/Users/asylcreek/.local/share/nvim/site/pack/packer/start/nerdtree",
-    url = "https://github.com/scrooloose/nerdtree"
-  },
   ["nui.nvim"] = {
     loaded = true,
     path = "/Users/asylcreek/.local/share/nvim/site/pack/packer/start/nui.nvim",
@@ -158,6 +153,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/asylcreek/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
+  },
+  ["vim-airline"] = {
+    loaded = true,
+    path = "/Users/asylcreek/.local/share/nvim/site/pack/packer/start/vim-airline",
+    url = "https://github.com/vim-airline/vim-airline"
+  },
+  ["vim-airline-themes"] = {
+    loaded = true,
+    path = "/Users/asylcreek/.local/share/nvim/site/pack/packer/start/vim-airline-themes",
+    url = "https://github.com/vim-airline/vim-airline-themes"
   },
   ["vim-fugitive"] = {
     loaded = true,
