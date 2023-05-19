@@ -45,7 +45,6 @@ return require('packer').startup(function(use)
         }
     }
 
-    vim.cmd([[ let g:neo_tree_remove_legacy_commands = 1 ]])
 
     use {
         "nvim-neo-tree/neo-tree.nvim",
@@ -57,11 +56,10 @@ return require('packer').startup(function(use)
         }
     }
 
-    vim.cmd([[ let g:airline#extensions#tabline#enabled = 1 ]])
-    vim.cmd([[ let g:airline#extensions#tabline#formatter = 'unique_tail' ]])
-
     use('vim-airline/vim-airline')
     use('vim-airline/vim-airline-themes')
 
     use("tpope/vim-commentary")
+
+    use("jiangmiao/auto-pairs")
 end)
