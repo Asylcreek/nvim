@@ -64,4 +64,6 @@ return require('packer').startup(function(use)
     use("jiangmiao/auto-pairs")
 
     use("APZelos/blamer.nvim")
+
+    use("airblade/vim-gitgutter")
 end)
