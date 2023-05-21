@@ -65,8 +65,6 @@ return require('packer').startup(function(use)
 
   use("APZelos/blamer.nvim")
 
-  use("airblade/vim-gitgutter")
-
   use { 'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons' }
 
   use { "SmiteshP/nvim-navic", requires = "neovim/nvim-lspconfig" }
@@ -77,4 +75,6 @@ return require('packer').startup(function(use)
   use({ 'MunifTanjim/prettier.nvim', requires = { 'neovim/nvim-lspconfig', 'jose-elias-alvarez/null-ls.nvim' } })
 
   use("windwp/nvim-ts-autotag")
+
+  use('lewis6991/gitsigns.nvim')
 end)

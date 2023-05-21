@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/Users/asylcreek/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/Users/asylcreek/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/Users/asylcreek/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
@@ -208,11 +213,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/asylcreek/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
-  },
-  ["vim-gitgutter"] = {
-    loaded = true,
-    path = "/Users/asylcreek/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
-    url = "https://github.com/airblade/vim-gitgutter"
   }
 }
 

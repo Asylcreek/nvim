@@ -38,3 +38,9 @@ vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("so")
 end)
 
+-- Move to next, previous buffer
+vim.keymap.set("n", "gt", vim.cmd.bnext)
+vim.keymap.set("n", "gT", vim.cmd.bprevious)
+vim.keymap.set("n", "<C-1>", vim.cmd.bfirst)
+vim.keymap.set("n", "<C-9>", vim.cmd.blast)
+
