@@ -10,6 +10,6 @@ vim.cmd([[ let g:airline#extensions#tabline#left_sep = ' ' ]])
 vim.cmd([[ let g:airline#extensions#tabline#left_alt_sep = '|' ]])
 vim.cmd([[ let g:airline#extensions#tabline#formatter = 'unique_tail' ]])
 
--- Git Lens
+-- Blamer
 vim.cmd([[ let g:blamer_enabled = 1 ]])
 
