@@ -81,4 +81,6 @@ return require('packer').startup(function(use)
   use('wakatime/vim-wakatime')
 
   use('axelvc/template-string.nvim')
+
+  use { "akinsho/toggleterm.nvim", tag = '*' }
 end)
