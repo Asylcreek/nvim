@@ -4,70 +4,75 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
-    -- Packer can manage itself
-    use 'wbthomason/packer.nvim'
+  -- Packer can manage itself
+  use 'wbthomason/packer.nvim'
 
-    use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.1',
-        -- or                            , branch = '0.1.x',
-        requires = { { 'nvim-lua/plenary.nvim' } }
+  use {
+    'nvim-telescope/telescope.nvim', tag = '0.1.1',
+    -- or                            , branch = '0.1.x',
+    requires = { { 'nvim-lua/plenary.nvim' } }
+  }
+
+  use({ 'rose-pine/neovim', as = 'rose-pine' })
+
+  vim.cmd('colorscheme rose-pine')
+
+  use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
+
+  use("mbbill/undotree")
+
+  use("tpope/vim-fugitive")
+
+  use {
+    'VonHeikemen/lsp-zero.nvim',
+    branch = 'v2.x',
+    requires = {
+      -- LSP Support
+      { 'neovim/nvim-lspconfig' }, -- Required
+      {
+        -- Optional
+        'williamboman/mason.nvim',
+        run = function()
+          pcall(vim.cmd, 'MasonUpdate')
+        end,
+      },
+      { 'williamboman/mason-lspconfig.nvim' }, -- Optional
+
+      -- Autocompletion
+      { 'hrsh7th/nvim-cmp' },     -- Required
+      { 'hrsh7th/cmp-nvim-lsp' }, -- Required
+      { 'L3MON4D3/LuaSnip' },     -- Required
     }
+  }
 
-    use({ 'rose-pine/neovim', as = 'rose-pine' })
 
-    vim.cmd('colorscheme rose-pine')
-
-    use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
-
-    use("mbbill/undotree")
-
-    use("tpope/vim-fugitive")
-
-    use {
-        'VonHeikemen/lsp-zero.nvim',
-        branch = 'v2.x',
-        requires = {
-            -- LSP Support
-            { 'neovim/nvim-lspconfig' }, -- Required
-            {
-                -- Optional
-                'williamboman/mason.nvim',
-                run = function()
-                    pcall(vim.cmd, 'MasonUpdate')
-                end,
-            },
-            { 'williamboman/mason-lspconfig.nvim' }, -- Optional
-
-            -- Autocompletion
-            { 'hrsh7th/nvim-cmp' },     -- Required
-            { 'hrsh7th/cmp-nvim-lsp' }, -- Required
-            { 'L3MON4D3/LuaSnip' },     -- Required
-        }
+  use {
+    "nvim-neo-tree/neo-tree.nvim",
+    branch = "v2.x",
+    requires = {
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+      "MunifTanjim/nui.nvim",
     }
+  }
 
+  use('vim-airline/vim-airline')
+  use('vim-airline/vim-airline-themes')
 
-    use {
-        "nvim-neo-tree/neo-tree.nvim",
-        branch = "v2.x",
-        requires = {
-            "nvim-lua/plenary.nvim",
-            "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-            "MunifTanjim/nui.nvim",
-        }
-    }
+  use("tpope/vim-commentary")
 
-    use('vim-airline/vim-airline')
-    use('vim-airline/vim-airline-themes')
+  use("jiangmiao/auto-pairs")
 
-    use("tpope/vim-commentary")
+  use("APZelos/blamer.nvim")
 
-    use("jiangmiao/auto-pairs")
+  use("airblade/vim-gitgutter")
 
-    use("APZelos/blamer.nvim")
+  use { 'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons' }
 
-    use("airblade/vim-gitgutter")
+  use { "SmiteshP/nvim-navic", requires = "neovim/nvim-lspconfig" }
 
-    use { 'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons' }
+  use('neovim/nvim-lspconfig')
+  use('jose-elias-alvarez/null-ls.nvim')
 
-    use { "SmiteshP/nvim-navic", requires = "neovim/nvim-lspconfig" }
+  use({ 'MunifTanjim/prettier.nvim', requires = { 'neovim/nvim-lspconfig', 'jose-elias-alvarez/null-ls.nvim' } })
 end)
