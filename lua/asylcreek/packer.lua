@@ -68,4 +68,6 @@ return require('packer').startup(function(use)
     use("airblade/vim-gitgutter")
 
     use { 'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons' }
+
+    use { "SmiteshP/nvim-navic", requires = "neovim/nvim-lspconfig" }
 end)
