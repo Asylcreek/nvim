@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/Users/asylcreek/.local/share/nvim/site/pack/packer/start/blamer.nvim",
     url = "https://github.com/APZelos/blamer.nvim"
   },
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/Users/asylcreek/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
+    url = "https://github.com/akinsho/bufferline.nvim"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/Users/asylcreek/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
