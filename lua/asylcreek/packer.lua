@@ -79,4 +79,6 @@ return require('packer').startup(function(use)
   use('lewis6991/gitsigns.nvim')
 
   use('wakatime/vim-wakatime')
+
+  use('axelvc/template-string.nvim')
 end)
