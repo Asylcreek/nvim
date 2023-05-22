@@ -83,4 +83,6 @@ return require('packer').startup(function(use)
   use('axelvc/template-string.nvim')
 
   use { "akinsho/toggleterm.nvim", tag = '*' }
+
+  use("tpope/vim-obsession")
 end)

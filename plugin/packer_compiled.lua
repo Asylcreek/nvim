@@ -224,6 +224,11 @@ _G.packer_plugins = {
     path = "/Users/asylcreek/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
   },
+  ["vim-obsession"] = {
+    loaded = true,
+    path = "/Users/asylcreek/.local/share/nvim/site/pack/packer/start/vim-obsession",
+    url = "https://github.com/tpope/vim-obsession"
+  },
   ["vim-wakatime"] = {
     loaded = true,
     path = "/Users/asylcreek/.local/share/nvim/site/pack/packer/start/vim-wakatime",
