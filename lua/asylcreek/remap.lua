@@ -44,3 +44,6 @@ vim.keymap.set("n", "gT", vim.cmd.bprevious)
 vim.keymap.set("n", "<C-1>", vim.cmd.bfirst)
 vim.keymap.set("n", "<C-9>", vim.cmd.blast)
 
+vim.keymap.set("n", "<C-q>", "<cmd>qa!<CR>")
+vim.keymap.set("n", "<C-s>", "<cmd>w<CR>")
+vim.keymap.set("n", "<C-w>", "<cmd>q<CR>")
